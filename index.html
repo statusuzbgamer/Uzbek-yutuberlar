@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="uz"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>O'zbek gamerlar: jonli obunachilar</title>
+<style>
+:root{--bg:#fff;--card:rgba(244,244,246,.88);--fg:#0f0f0f;--mut:#606060;--red:#e60026;--up:#0a8f3c;--gold:#ffc83d;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0d0d12;--card:rgba(30,30,38,.88);--fg:#f1f1f1;--mut:#aaa;--up:#3ddc84}}
+:root[data-theme="dark"]{--bg:#0d0d12;--card:rgba(30,30,38,.88);--fg:#f1f1f1;--mut:#aaa;--up:#3ddc84}
+*{box-sizing:border-box}
+html,body{margin:0;background:var(--bg);color:var(--fg);font-family:Roboto,Arial,sans-serif}
+body::before{content:"";position:fixed;inset:-20%;z-index:-2;background:radial-gradient(circle at 15% 12%,rgba(230,0,38,.22),transparent 38%),radial-gradient(circle at 88% 28%,rgba(123,47,247,.22),transparent 38%),radial-gradient(circle at 28% 88%,rgba(0,198,255,.2),transparent 40%),radial-gradient(circle at 85% 90%,rgba(255,176,0,.16),transparent 35%);animation:bgm 20s ease-in-out infinite alternate}
+body::after{content:"";position:fixed;inset:0;z-index:-1;background-image:radial-gradient(rgba(128,128,128,.28) 1px,transparent 1.5px);background-size:22px 22px;opacity:.5;pointer-events:none}
+@keyframes bgm{to{transform:translate(4%,3%) scale(1.12) rotate(4deg)}}
+main{max-width:640px;margin:0 auto;padding:16px}
+header{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-bottom:6px}
+h1{margin:0;font-size:clamp(20px,5.5vw,28px);line-height:1.15}
+.live{display:inline-flex;align-items:center;gap:6px;color:var(--red);font-weight:700;font-size:13px}
+.live i{width:9px;height:9px;border-radius:50%;background:var(--red);animation:p 1.4s infinite}
+@keyframes p{50%{opacity:.25}}
+#st{color:var(--mut);font-size:13px;margin:0 0 14px;min-height:18px}
+ol{list-style:none;margin:0;padding:0;display:grid;gap:10px}
+.row{display:flex;align-items:center;gap:12px;background:var(--card);backdrop-filter:blur(6px);border-radius:16px;padding:12px;text-decoration:none;color:inherit;border-left:4px solid transparent;transition:transform .2s}
+.row:hover{transform:translateX(3px)}
+li:nth-child(1)>.row{border-left-color:#ffc83d}
+li:nth-child(2)>.row{border-left-color:#c0c7d0}
+li:nth-child(3)>.row{border-left-color:#cd7f32}
+.rk{width:26px;text-align:center;font-weight:700;font-size:20px;color:var(--mut)}
+li:first-child .rk{color:var(--red);font-size:26px}
+.row img{width:56px;height:56px;border-radius:50%;object-fit:cover;background:#888;flex:none}
+.nm{flex:1;min-width:0}
+.nm b{display:block;font-size:16px;overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
